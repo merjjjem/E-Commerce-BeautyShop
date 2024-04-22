@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "name": "LANEIGE Lip Glowy Balm",
+      "price": 55.00,
+      "picture": "images/Products/lanagelipbalm.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dior Backstage Face & Body Foundation",
+      "price": 75.00,
+      "picture": "images/Products/DiorFondation.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Positive Light Liquid Luminizer",
+      "price": 45.00,
+      "picture": "images/Products/RBHighlighter.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ultra Plush Blush Makeup Brush",
+      "price": 55.00,
+      "picture": "images/Products/RT Brush.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dior Rosy Glow Blush<",
+      "price": 95.00,
+      "picture": "images/Products/DiorBlush.jpg"
+    },
+    {
+      "id": 6,
+      "name": "La Roche-Posay Sunscreen<",
+      "price": 55.00,
+      "picture": "images/Products/LRPSunscreen.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Milk Makeup Hydro Grip Primer<",
+      "price": 30.00,
+      "picture": "images/Products/MIlkPrimer.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Peptide Lip Treatment<",
+      "price": 34.00,
+      "picture": "images/Products/RodheLipstick.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sculpt Stick Cream Contour Stick<",
+      "price": 35.00,
+      "picture": "images/Products/MilkConutrestick.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Niacinamide 10% + Zinc 1%",
+      "price": 50.00,
+      "picture": "images/Products/theONiancinamid.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Soft Pinch Liquid Blush",
+    "price": 55.00,
+    "picture": "images/Products/RBBlush.jpg"
+},
+
+{
+  "id": 12,
+  "name": "Kind Words Matte Lipstick",
+  "price": 75.00,
+  "picture": "images/Products/RBLipstick2.jpg"
+}
+
+
+    
+
+
+
+  ]
+  

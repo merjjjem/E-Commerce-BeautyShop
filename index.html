@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jQuerySPApp.css">
+</head>
+<body>
+   
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="150px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#products">Products</a></li>
+                   <li><a href="#myaccount">Account</a></li>
+               </ul>
+ 
+              </nav>
+              <a href="cart.html"><img src="images/cartpic.png" width="30px" height="30px"></a>
+              <img src="images/hamburger.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+       </div>
+   </div>
+
+
+          <main id="jqueryspapp" role="main">
+            <section id="home" data-load="home.html"></section>
+            <section id="product" data-load="single-product.html"></section>
+            <section id="products" data-load="products.html"></section>
+            <section id="myaccount" data-load="myaccount.html"></section>
+            <section id="cart" data-load="cart.html"></section>
+        </main>
+
+     
+
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/whitelogo.png">
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+<script src="js/JQuerySPApp.js"></script>
+
+<script type="text/javascript">
+    
+      $(document).ready(function(){
+        var app = $.jQuerySPApp({defaultView : "home"});
+    
+    
+        
+    
+        app.run();
+    
+      })
+    
+</script>
+
+
+
+
+</body>
+</html>

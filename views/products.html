@@ -1,0 +1,52 @@
+<section id="products">
+
+    
+    <div class="small-container">
+        <div class="row row-2">
+          <h2>All Products</h2>
+        </div>
+          <div class="row" id="product-container">
+        
+              
+      </div>
+
+</section>
+
+<script>
+
+$(document).ready(function() {
+    // AJAX call to fetch data from JSON file
+    $.ajax({
+        url: 'data/products.json', // Assuming your JSON file is named products.json
+        dataType: 'json',
+        success: function(data) {
+            // Iterate over each product in the JSON data
+            $.each(data, function(index, product) {
+                // Create HTML elements for each product and append to the product-container
+                var productHtml = '<div class="col-4 product" data-id="' + product.id + '">' +
+                                    '<img src="' + product.picture + '">' +
+                                    '<h4>' + product.name + '</h4>' +
+                                    '<p>$' + product.price + '</p>' +
+                                  '</div>';
+                $('#product-container').append(productHtml);
+            });
+
+            // Event listener for when a product is clicked
+            $('.product').on('click', function() {
+                // Retrieve the product ID from the clicked product
+                var productId = $(this).data('id');
+                // Store the product ID in local storage
+                localStorage.setItem('productId', productId);
+                // Redirect to the single product page
+                window.location.href = '#product-details'; // Change this to the actual URL of your single product page
+            });
+        },
+        error: function(xhr, status, error) {
+            console.error('Error fetching JSON:', error);
+        }
+    });
+});
+
+
+</script>
+
